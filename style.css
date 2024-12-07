@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  
+  .navbar a:hover {
+    color: #00ff99;
+  }
+  
+  .hero {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url('crypto-background.jpg') no-repeat center/cover;
+    background-size: cover;
+    text-align: center;
+    padding: 0 1rem;
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #00ff99;
+    color: #181818;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00cc7a;
+  }
+  .about {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: 2rem 1rem;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  /* Types Section with Glassmorphism */
+  .types {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .crypto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .crypto-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .crypto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .crypto-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .crypto-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .crypto-card p {
+    font-size: 1rem;
+  }
+  .benefits {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: 2rem 1rem;
+    color: #fff;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .benefits-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .benefits li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #00ff99;
+    font-weight: 500;
+  }
+  
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  @media (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .crypto-card h3 {
+      font-size: 1.25rem;
+    }
+  
+    .crypto-card p {
+      font-size: 0.9rem;
+    }
+  
+    .benefits li {
+      font-size: 1rem;
+    }
+  }
+  
